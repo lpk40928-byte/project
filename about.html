@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เกี่ยวกับฉัน - My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about-section { margin-bottom: 2.5rem; }
+    .skill-bar { margin-bottom: 1rem; }
+    .skill-name { display: flex; justify-content: space-between; margin-bottom: 0.3rem; }
+    .progress-bg { background: var(--border-color); height: 10px; border-radius: 5px; overflow: hidden; }
+    .progress-fill { background: var(--primary-color); height: 100%; border-radius: 5px; }
+
+    .timeline { border-left: 3px solid var(--primary-color); padding-left: 1.5rem; margin-top: 1rem; }
+    .timeline-item { margin-bottom: 1.5rem; position: relative; }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.95rem;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      background: var(--primary-color);
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="about.html" class="active">เกี่ยวกับฉัน</a></li>
+        <li><a href="projects.html">ผลงาน</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <h2>ประวัติโดยย่อ</h2>
+      <p>ยินดีต้อนรับสู่หน้าเกี่ยวกับฉัน ฉันมีความสนใจในการพัฒนาเว็บไซต์และการออกแบบ UX/UI มีประสบการณ์ในการเขียนโปรแกรมและสร้างเว็บแอพพลิเคชันที่ใช้งานง่าย มุ่งมั่นที่จะเรียนรู้เทคโนโลยีใหม่ๆ อยู่เสมอ</p>
+    </section>
+
+    <section class="about-section">
+      <h2>ทักษะทางเทคนิค (Technical Skills)</h2>
+      <div class="skill-bar">
+        <div class="skill-name"><span>HTML / CSS</span><span>90%</span></div>
+        <div class="progress-bg"><div class="progress-fill" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name"><span>JavaScript</span><span>75%</span></div>
+        <div class="progress-bg"><div class="progress-fill" style="width: 75%;"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name"><span>Responsive Design</span><span>85%</span></div>
+        <div class="progress-bg"><div class="progress-fill" style="width: 85%;"></div></div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>ประวัติการศึกษา / การทำงาน (Timeline)</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>2024 - ปัจจุบัน</h3>
+          <p><strong>Frontend Developer</strong> - บริษัท Tech Startup</p>
+        </article>
+        <article class="timeline-item">
+          <h3>2020 - 2024</h3>
+          <p><strong>ปริญญาตรี วิทยาการคอมพิวเตอร์</strong> - มหาวิทยาลัย...</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>หน้าแรก - My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Specific styles for Homepage */
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      margin-bottom: 3rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    .hero-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid var(--primary-color);
+    }
+    .hero h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    .tagline { color: var(--text-muted); font-size: 1.2rem; margin-bottom: 1.5rem; }
+
+    .featured { margin-top: 2rem; }
+    .featured h2 { margin-bottom: 1.5rem; text-align: center; }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      border: 1px solid var(--border-color);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+    .card-body { padding: 1.25rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">หน้าแรก</a></li>
+        <li><a href="about.html">เกี่ยวกับฉัน</a></li>
+        <li><a href="projects.html">ผลงาน</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="../../Pictures/Screenshots/Screenshot 2026-05-22 092725.png" width="500" height="500" border="0" alt="">
+      <h1> 
+	  
+	  สวัสดีค่ะ ฉันคือ ญาดานันท์ กองกลิ่น</h1>
+      <p class="tagline">Web Developer & Frontend Designer ผู้หลงใหลในการสร้างสรรค์เว็บไซต์</p>
+      <a href="contact.html" class="btn">ติดต่องาน / ร่วมงาน</a>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="featured">
+      <h2>ผลงานเด่น (Featured Projects)</h2>
+      <div class="project-grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/400x250" alt="โปรเจกต์ 1">
+          <div class="card-body">
+            <h3>Website E-Commerce</h3>
+            <p>ระบบร้านค้าออนไลน์ รองรับการสั่งซื้อและชำระเงิน</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/400x250" alt="โปรเจกต์ 2">
+          <div class="card-body">
+            <h3>Task Management App</h3>
+            <p>แอปพลิเคชันจัดการงานแบบเรียลไทม์</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
