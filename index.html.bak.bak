@@ -65,9 +65,9 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <img src="<img src="02.jpg" width="960" height="960" border="0" alt="">" width="500" height="500" border="0" alt="">
+      <img src="../../Pictures/Screenshots/Screenshot 2026-05-22 092725.png" width="928" height="937" border="0" alt="">
       <h1> 
-	  
+	  <img src="../../Pictures/Screenshots/Screenshot 2026-05-22 093548.png" width="901" height="681" border="0" alt="">
 	  สวัสดีค่ะ ฉันคือ ญาดานันท์ กองกลิ่น</h1>
       <p class="tagline">Web Developer & Frontend Designer ผู้หลงใหลในการสร้างสรรค์เว็บไซต์</p>
       <a href="contact.html" class="btn">ติดต่องาน / ร่วมงาน</a>
